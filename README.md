@@ -1,5 +1,4 @@
-Here’s a simplified and generic README for your Airflow project:
-
+# All about Airflow with ETL usecases
 ---
 
 # **Airflow DAGs**
