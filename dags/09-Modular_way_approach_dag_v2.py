@@ -8,19 +8,23 @@ from airflow.operators.python import PythonOperator
 import os
 import sys
 
+# for sys module:
+#NOTE: we should add this sys path in our business_logic script file also..
+add_path_to_sys = "/home/nalla/airflow/My_Scripts"
+sys.path.append(add_path_to_sys)
+
+from init import *  
+#NOTE: we should call this init modular in our business_logic script file also..
+from etl_business_logic_v2 import *
+
 #for os module:
-root_folder_path = "/home/nalla/airflow/My_Scripts"
-os.chdir(root_folder_path)
+# root_folder_path = "/home/nalla/airflow/My_Scripts"
+# os.chdir(root_folder_path)
 
-exec(open('./init.py').read())
-exec(open('./etl_business_logic_v1.py').read())
+# exec(open('./init.py').read())
+# exec(open('./etl_business_logic_v1.py').read())
 
-# for sys module: (find in modular_code_approach_v2 dag)
-# add_path_to_sys = "/home/nalla/airflow/My_Scripts"
-# sys.path.append(add_path_to_sys)
 
-# from init import *
-# from etl_business_logic_v1 import *
 
 default_args = {
     'owner': 'Nalla Perumal',
@@ -30,7 +34,7 @@ default_args = {
 }
 
 with DAG(
-    "modular_code_approach_v1",
+    "modular_code_approach_v2",
     default_args=default_args,
     catchup=False,
     description="This is a dummy ETL for Xcom understanding concept!",
