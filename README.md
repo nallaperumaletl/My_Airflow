@@ -1,4 +1,4 @@
-# All about Airflow with ETL usecases
+# All About Airflow with ETL Use Cases
 ---
 
 # **Airflow DAGs**
