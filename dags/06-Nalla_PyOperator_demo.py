@@ -58,7 +58,7 @@ with DAG(
     l = PythonOperator(
         task_id = "LOAD",
         python_callable= load_fn,
-        op_kwargs = ["NALLA PERUMAL", "DATA ENGINEER"],
+        op_kwargs = ["NALLA PERUMAL", "DATA ENGINEER"]
         #op_args = {p1="NALLA PERUMAL" , p2="DATA ENGINEER"}
     )
     

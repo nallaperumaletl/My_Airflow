@@ -12,6 +12,7 @@ Nalla-test-outfile/
 *.pyc
 __pycache__/
 
-# Exclude Airflow webserver configuration & PID file
+# Exclude Airflow webserver configuration & PID file % other files
 webserver_config.py
 airflow-webserver.pid
+quick_git_push.sh
