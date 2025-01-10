@@ -15,7 +15,9 @@ def extract_fn():
     print("Value of Global variable is: ", TITLE)
     rtn_val = "Hello Nalla!"
     return rtn_val
-
+# In this section we passing the xcom vasue as simple datatypes/values, but for Dataframe like return values
+    # we need some workaround, lets see in next dag files....
+    
 # Creating Dataframe
 # details = {
 #   'cust_id' : [1, 2, 3, 4],
