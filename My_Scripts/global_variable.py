@@ -1,9 +1,9 @@
-TITLE = "ETL Developer"
+TITLE = "Data Engineer!"
 
 def fn():
     print("Inside function!")
     print("The value of TITLE is :", TITLE)
-    #TITLE = "DATA ENGINEER"   
+    #TITLE = "ETL Developer"   
     #we shouldn't provide the local veriable inside the function once provided as a "GLOBAL VARIABLE WITH THE SAME NAME"
     
     rtn_val =  "Hello Nalla Perumal!"
