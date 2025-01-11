@@ -3,6 +3,10 @@ from datetime import datetime
 from airflow import DAG
 from airflow.operators.empty import EmptyOperator
 from airflow.operators.python import PythonOperator
+import logging
+
+logger = logging.getLogger(__name__)
+logger.info("This is a log message")
 
 import sys
 #NOTE: we should add this sys path in our business_logic script file also..
