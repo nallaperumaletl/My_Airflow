@@ -6,7 +6,7 @@ airflow.db
 airflow.db.backup
 
 # Exclude temporary or output files
-Nalla-test-outfile/
+#Nalla-test-outfile/
 
 # Exclude compiled Python files
 *.pyc
