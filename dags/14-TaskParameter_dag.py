@@ -46,8 +46,8 @@ default_args = {
 
 with DAG( 'Ex_custom_parameter',  default_args=default_args, 
          description='custom paramter example', 
-         #schedule_interval=timedelta(minutes=5), 
-         start_date=datetime(2024, 1, 12), catchup=False, tags=["ETL", "DE"] ) as dag:
+         schedule_interval='@daily',
+         start_date=datetime(2024, 1, 12), catchup=True, tags=["ETL", "DE"] ) as dag:
     
     start = EmptyOperator(task_id="START")
     config_params = PythonOperator(
